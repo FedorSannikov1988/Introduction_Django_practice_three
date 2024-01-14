@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block style %}
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block title %}
+    <title> {{ title }} </title>
+{% endblock %}
+
+{% block content %}
+    <h1 class="color-for-head-index">Добро пожаловать на "Главную страницу".</h1>
+    <p>Здесь вы найдете информацию о моем проекте на Django.</p>
+    <h2>О проекте:</h2>
+    <p>Мой проект на Django это одно простое веб-приложение.</p>
+    <p>Оно содержит несколько страниц (index - Главная станица и about_me - Обо мне).</p>
+{% endblock %}

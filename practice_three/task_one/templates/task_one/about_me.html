@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block style %}
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block title %}
+    <title> {{ title }} </title>
+{% endblock %}
+
+{% block content %}
+    <h1 class="color-for-head-about_me">Добро пожаловать на "Обо мне".</h1>
+    <p>Меня зовут {{ name }}.</p>
+    <p>Я начинающий разработчик и этот проект - моя первая домашняя работа по Django.</p>
+    <p>Я увлекаюсь программированием и хочу развиваться в этой области.</p>
+{% endblock %}
