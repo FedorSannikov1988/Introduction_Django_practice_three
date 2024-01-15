@@ -24,7 +24,7 @@
     </p>
 
     <p> Автор: <br>
-        {{ article.author }}
+        {{ article.author.get_name_and_surname  }}
     </p>
 
     <p> Категория: <br>
@@ -38,5 +38,34 @@
     <p> Статус публиккации: <br>
         {{ article.publish }}
     </p>
+
+    {% if comments %}
+
+    <h2 class="color-for-head-see_article_by_id">
+    Комментарии:
+    </h2>
+
+        {% for one_comment in comments %}
+
+            <p>
+
+                {% if one_comment.date_creation != one_comment.date_change %}
+                    Комментарий изминен <br>
+                {% endif %}
+
+                Автор: <br>
+                {{ one_comment.author.get_name_and_surname }} <br>
+                Комментарий: <br>
+                {{ one_comment.comment }} <br>
+                Дата публикации: <br>
+                {{ one_comment.date_creation }} <br>
+                Дата изминения: <br>
+                {{ one_comment.date_change }} <br>
+
+            </p>
+
+        {% endfor %}
+
+    {% endif %}
 
 {% endblock %}

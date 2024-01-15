@@ -32,7 +32,6 @@ ALLOWED_HOSTS = [
     '192.168.0.239',
 ]
 
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -45,6 +44,7 @@ INSTALLED_APPS = [
     'task_one',
     'task_three',
     'task_four_app',
+    'task_seven_app',
 ]
 
 MIDDLEWARE = [

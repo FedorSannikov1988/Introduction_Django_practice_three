@@ -1,6 +1,5 @@
 import logging
 from django.shortcuts import render
-from django.http import HttpResponse
 
 
 logger = logging.getLogger(__name__)
@@ -16,7 +15,7 @@ def index(request):
         "title": "Главная страница",
     }
 
-    return render(request, "task_one/task_three_heads_or_tails.html", context)
+    return render(request, "task_one/index.html", context)
 
 
 def about_me(request):

@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from task_four_app.models import Article, Author
+from task_four_app.models import Article, Author, Comment
 
 
 def get_all_articles(request):
@@ -43,8 +43,12 @@ def see_article_by_id(request, id_article: int):
     article.number_views += 1
     article.save()
 
+    comments = \
+        Comment.objects.filter(article=article).order_by('-date_change').all()
+
     context = {
         "article": article,
+        "comments": comments,
     }
 
     return render(request, "see_article_by_id.html", context)
