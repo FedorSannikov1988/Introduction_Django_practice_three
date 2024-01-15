@@ -1,5 +1,5 @@
 from decimal import Decimal
-from shop.models import Order, Client, Product
+from task_seven_app.models import Order, Client, Product
 from django.core.management.base import BaseCommand
 
 

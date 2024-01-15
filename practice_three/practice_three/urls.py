@@ -22,4 +22,5 @@ urlpatterns = [
     path('task_one/', include('task_one.urls')),
     path('task_three/', include('task_three.urls')),
     path('task_four_app/', include('task_four_app.urls')),
+    path('task_seven_app/', include('task_seven_app.urls')),
 ]

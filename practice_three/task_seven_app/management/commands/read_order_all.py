@@ -1,4 +1,4 @@
-from shop.models import Order
+from task_seven_app.models import Order
 from django.core.management.base import BaseCommand
 
 

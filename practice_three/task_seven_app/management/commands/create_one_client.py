@@ -1,6 +1,6 @@
 from django.core.exceptions import ValidationError
 from django.core.management.base import BaseCommand
-from shop.models import Client, for_phone_number_validation
+from task_seven_app.models import Client, for_phone_number_validation
 
 
 class Command(BaseCommand):

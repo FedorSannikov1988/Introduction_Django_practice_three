@@ -1,5 +1,5 @@
 import random
-from shop.models import Product
+from task_seven_app.models import Product
 from django.core.management.base import BaseCommand
 
 

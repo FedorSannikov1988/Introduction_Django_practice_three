@@ -1,4 +1,4 @@
-from shop.models import Client
+from task_seven_app.models import Client
 from django.core.management.base import BaseCommand
 
 
