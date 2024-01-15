@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block style %}
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block title %}
+    <title> {{ article.title }} </title>
+{% endblock %}
+
+{% block content %}
+
+    <h1 class="color-for-head-see_article_by_id">
+        {{ article.title }}
+    </h1>
+
+    <p> Содержание: <br>
+        {{ article.content }}
+    </p>
+
+    <p> Дата публикации: <br>
+        {{ article.date_publication }}
+    </p>
+
+    <p> Автор: <br>
+        {{ article.author }}
+    </p>
+
+    <p> Категория: <br>
+        {{ article.category }}
+    </p>
+
+    <p> Количество просмотров: <br>
+        {{ article.number_views }}
+    </p>
+
+    <p> Статус публиккации: <br>
+        {{ article.publish }}
+    </p>
+
+{% endblock %}

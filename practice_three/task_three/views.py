@@ -1,7 +1,6 @@
 import random
 import logging
 from django.shortcuts import render
-from django.http import HttpResponse
 
 
 logger = logging.getLogger(__name__)
@@ -67,7 +66,6 @@ def random_number(request, number_throws: int):
     }
 
     return render(request, "task_three_random_number.html", context)
-
 
 
 def get_random_number(start: int, stop: int) -> int:
