@@ -11,7 +11,6 @@ def get_all_customer_orders_and_list_products(request, name_client: str):
         Order.objects.filter(client=client).all()
 
     context = {
-        "title": f"Все заказы {name_client}",
         "name_client": name_client,
         "orders": orders
     }
