@@ -33,8 +33,7 @@
                 <li>
 
                     <p>
-                        Сумма заказа: <br>
-                        {{ one_order.total_amount_order }} <br>
+                        Сумма заказа: {{ one_order.total_amount_order|floatformat:2 }} Р <br>
                     </p>
 
                     <p>
